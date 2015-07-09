@@ -16,7 +16,7 @@
 | environments.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = '/pbb/';
 
 /*
 |--------------------------------------------------------------------------
@@ -226,7 +226,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'madiun';
 
 /*
 |--------------------------------------------------------------------------
