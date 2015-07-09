@@ -15,7 +15,7 @@ class HomeCon extends CI_Controller
 		//$session_data = $this->session->userdata('logged_in');
 		//$data['username'] = $session_data['username'];
 		//$data['status'] = $session_data['status'];
-		$this->load->view('menu');
+		$this->load->view('tes');
 		//$this->load->view('homeview', $data);
 	}
 	
