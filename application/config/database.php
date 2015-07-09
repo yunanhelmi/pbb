@@ -62,6 +62,7 @@ $db['default']['char_set'] = 'utf8';
 $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
+$db['default']['port'] 	   = 5432;
 $db['default']['stricton'] = FALSE;
 
 
