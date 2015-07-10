@@ -4,7 +4,7 @@ $(function () {
 		
 		var options = {
 	            chart: {
-	                renderTo: 'coba',
+	                renderTo: 'container1',
 	                type: 'line',
 	                marginRight: 130,
 	                marginBottom: 25,   
