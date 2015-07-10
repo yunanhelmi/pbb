@@ -15,11 +15,11 @@
 					if($status == 1)
 					{
 					?>
-					<td><a href="http://36.74.100.179/mon/index.php">HOME</a></td>
+					<td><a href="<?php echo base_url()?>index.php">HOME</a></td>
 					<td><a href="http://36.74.100.179/mon/index.php/report/pbb">INPUT PBB</a></td>
-					<td><a href="http://36.74.100.179/mon/index.php/report/pbb">PBB</a></td>
+					<td><a href="<?php echo base_url()?>index.php/homecon/nonpbb">PBB</a></td>
 					<td><a href="http://36.74.100.179/mon/index.php/report/dataNonPbb">INPUT NON-PBB</a></td>
-					<td><a href="http://36.74.100.179/mon/index.php/report/dataNonPbb">NON-PBB</a></td>
+					<td><a href="<?php echo base_url()?>index.php/homecon/pbb">NON-PBB</a></td>
 					<td><a href="http://36.74.100.179/mon/index.php/report/dataLain">LAIN-LAIN</a></td>
 					<td><a href="<?php echo base_url()?>index.php/usercon/logout">LOGOUT</a></td>
 					<?php
@@ -27,9 +27,9 @@
 					else
 					{
 					?>
-					<td width="20%"><a href="http://36.74.100.179/mon/index.php">HOME</a></td>
-					<td width="20%"><a href="http://36.74.100.179/mon/index.php/report/pbb">PBB</a></td>
-					<td width="20%"><a href="http://36.74.100.179/mon/index.php/report/dataNonPbb">NON-PBB</a></td>
+					<td width="20%"><a href="<?php echo base_url()?>index.php">HOME</a></td>
+					<td width="20%"><a href="<?php echo base_url()?>index.php/homecon/pbb">PBB</a></td>
+					<td width="20%"><a href="<?php echo base_url()?>index.php/homecon/nonpbb">NON-PBB</a></td>
 					<td width="20%"><a href="http://36.74.100.179/mon/index.php/report/dataLain">LAIN-LAIN</a></td>
 					<td><a href="<?php echo base_url() ?>index.php/usercon/login">LOGIN</a></td>
 					<?php

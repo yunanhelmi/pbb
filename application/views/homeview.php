@@ -2,16 +2,19 @@
 		<script type="text/javascript" src="<?php echo base_url(); ?>assets/highcharts/js/highcharts.js"></script>
 		<script type="text/javascript" src="<?php echo base_url(); ?>assets/highcharts/js/highcharts-3d.js"></script>
 		<script type="text/javascript" src="<?php echo base_url(); ?>assets/highcharts/js/modules/exporting.js"></script>
+		<script type="text/javascript" src="<?php echo base_url(); ?>assets/highcharts/charts/linehome.js"></script>
+		<script type="text/javascript" src="<?php echo base_url(); ?>assets/highcharts/charts/piehome.js"></script>
+		
+		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/stylebody.css" type="text/css">
 	
 		<table width="100%">
 			<tr>
-				<td width="50%"><div id="container1" style="height: 400px"></td>
-				<td style="font-family:calibri;text-align:center;text-weight:bold">Pendapatan Pajak Kabupaten Madiun Tahun 2015<div id="container2" style="height: 270px"></td>
+				<td width="50%"><div id="container1" style="height: 400px"></div></td>
+				<td style="font-family:calibri;text-align:center;text-weight:bold">Pendapatan Pajak Kabupaten Madiun Tahun 2015<div id="container2" style="height: 270px"></div></td>
 			</tr>
 		</table>
 		<br/>
 		<br/>
-		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/stylebody.css" type="text/css">
 		<div style="margin-left:50%;margin-top:-100px;z-index:100">
 		<table width="100%">
 			<tr>

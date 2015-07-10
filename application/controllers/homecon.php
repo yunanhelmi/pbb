@@ -21,20 +21,21 @@ class HomeCon extends CI_Controller
 		//$this->load->view('homeview', $data);
 	}
 	
-	function user()
+	function pbb()
 	{
-		if($this->session->userdata('logged_in'))
-		{
-			$session_data = $this->session->userdata('logged_in');
-			$data['username'] = $session_data['username'];
-			$data['status'] = $session_data['status'];
-			$this->load->view('menu', $data);
-			$this->load->view('homeview');
-		}
-		else
-		{
-			redirect('homecon', 'refresh');
-		}
+		$session_data = $this->session->userdata('logged_in');
+		$data['username'] = $session_data['username'];
+		$data['status'] = $session_data['status'];
+		$this->load->view('menu', $data);
+		$this->load->view('pbbview');
+	}
+	function nonpbb()
+	{
+		$session_data = $this->session->userdata('logged_in');
+		$data['username'] = $session_data['username'];
+		$data['status'] = $session_data['status'];
+		$this->load->view('menu', $data);
+		$this->load->view('nonpbbview');
 	}
 	
 	
