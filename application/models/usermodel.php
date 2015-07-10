@@ -31,8 +31,9 @@
 		{
 			$data=array(
 			'username'=>$this->input->post('username'),
+			'status'=>1,
 			'password'=>$this->input->post('password'),
-			'status'=>$this->input->post('status'),
+			'email'=>$this->input->post('email')
 			);
 			
 			$this->db->insert('user_login', $data);
