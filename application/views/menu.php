@@ -8,11 +8,21 @@
 		
 	</head>
 	<body>
+		<h2>Welcome <?php 
+			if (empty($username)) 
+			{
+				echo 'guest';
+			}
+			else
+			{
+				echo $username;
+			}?>
+		</h2>
 		<div class="CSSTableGenerator" >
 			<table>
 				<tr>
 					<?php
-					if($status == 1)
+					if($status == 1 && !empty($username))
 					{
 					?>
 					<td><a href="<?php echo base_url()?>index.php">HOME</a></td>

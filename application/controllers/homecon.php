@@ -6,7 +6,7 @@ class HomeCon extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('usermodel');
+		//$this->load->model('usermodel');
 		$this->load->library('session');
 		$this->load->library('form_validation');
 	}
@@ -29,6 +29,7 @@ class HomeCon extends CI_Controller
 		$this->load->view('menu', $data);
 		$this->load->view('pbbview');
 	}
+	
 	function inputpbb()
 	{
 		$session_data = $this->session->userdata('logged_in');
@@ -36,8 +37,9 @@ class HomeCon extends CI_Controller
 		$data['status'] = $session_data['status'];
 		$this->load->view('menu', $data);
 		$this->load->view('inputpbb');
-		print_r($session_data);
+		//print_r($session_data);
 	}
+	
 	function nonpbb()
 	{
 		$session_data = $this->session->userdata('logged_in');
@@ -46,6 +48,7 @@ class HomeCon extends CI_Controller
 		$this->load->view('menu', $data);
 		$this->load->view('nonpbbview');
 	}
+	
 	function lain()
 	{
 		$session_data = $this->session->userdata('logged_in');
