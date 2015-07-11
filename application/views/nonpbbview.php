@@ -11,7 +11,7 @@
 			<tr>
 				<td width="50%"><p style="font-family:arial;text-align:center;">PENDAPATAN PAJAK NON PBB TAHUN 2015</p><div id="container" style="height: 400px"></div></td>
 				<td width="50%" align="center">
-					<div class="CSSTableGenerator1" style="margin-top:-50px">
+					<div class="CSSTableGenerator2" style="margin-top:-50px">
 						<table border="1" width="70%" cellspacing="0" cellpadding="0">
 							<tr>
 								<td colspan="4">PENDAPATAN PAJAK NON PBB TAHUN 2015</td>

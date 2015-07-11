@@ -1,6 +1,6 @@
 <?php 
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+session_start();
 class HomeCon extends CI_Controller
 {
 	function __construct()
@@ -29,6 +29,15 @@ class HomeCon extends CI_Controller
 		$this->load->view('menu', $data);
 		$this->load->view('pbbview');
 	}
+	function inputpbb()
+	{
+		$session_data = $this->session->userdata('logged_in');
+		$data['username'] = $session_data['username'];
+		$data['status'] = $session_data['status'];
+		$this->load->view('menu', $data);
+		$this->load->view('inputpbb');
+		print_r($session_data);
+	}
 	function nonpbb()
 	{
 		$session_data = $this->session->userdata('logged_in');
@@ -37,7 +46,13 @@ class HomeCon extends CI_Controller
 		$this->load->view('menu', $data);
 		$this->load->view('nonpbbview');
 	}
-	
-	
+	function lain()
+	{
+		$session_data = $this->session->userdata('logged_in');
+		$data['username'] = $session_data['username'];
+		$data['status'] = $session_data['status'];
+		$this->load->view('menu', $data);
+		$this->load->view('lainview');
+	}
 }
 ?>

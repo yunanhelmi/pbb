@@ -48,7 +48,7 @@ class UserCon extends CI_Controller
 			}
 			else
 			{
-				redirect('homecon', 'refresh');
+				redirect('homecon/pbb', 'refresh');
 			}
 		}
 	}
