@@ -22,7 +22,6 @@ class UserCon extends CI_Controller
 			$session_data = $this->session->userdata('logged_in');
 			$data['username'] = $session_data['username'];
 			$data['status'] = $session_data['status'];
-			$this->load->view('menu', $data);
 			$this->load->view('login_form');
 		}
 	}
@@ -48,7 +47,7 @@ class UserCon extends CI_Controller
 			}
 			else
 			{
-				redirect('homecon/pbb', 'refresh');
+				redirect('homecon', 'refresh');
 			}
 		}
 	}
