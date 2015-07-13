@@ -40,21 +40,9 @@
 			return true;
 		}
 		
-		function drop_tahunpbb()
+		function drop_tahun()
 		{
-			$q = $this->db->query("select tahun_pbb from datapbb");
-			return $q;
-		}
-		
-		function drop_tahunnon()
-		{
-			$q = $this->db->query("select tahun_non from datanonpbb");
-			return $q;
-		}
-		
-		function drop_tahunlain()
-		{
-			$q = $this->db->query("select tahun_lain from datalain");
+			$q = $this->db->query("select tahun_sum from datasum");
 			return $q;
 		}
 	}

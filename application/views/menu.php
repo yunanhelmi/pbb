@@ -43,14 +43,14 @@
 			</table>
 		</div>
 		<div id="tahun">
-			<?php
-			echo "<select>";
-			$range = range(2010,2015);
-			foreach ($range as $cm) {
-			  echo "<option value='$cm'>$cm</option>";
-			}
-			echo "</select>";
-			?>
+			<select>
+				<?php 
+					foreach($tahun as $row)
+					{ 
+					  echo '<option value="'.$row->description.'">'.$row->description.'</option>';
+					}
+				?>
+			</select>
 		</div>
 		<br/>
 		<br/>
