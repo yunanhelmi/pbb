@@ -50,6 +50,15 @@ class HomeCon extends CI_Controller
 		$this->load->view('nonpbbview');
 	}
 	
+	function inputnonpbb()
+	{
+		$session_data = $this->session->userdata('logged_in');
+		$data['username'] = $session_data['username'];
+		$data['status'] = $session_data['status'];
+		$this->load->view('menu', $data);
+		$this->load->view('inputnonpbb');
+	}
+	
 	function lain()
 	{
 		$session_data = $this->session->userdata('logged_in');
@@ -58,6 +67,16 @@ class HomeCon extends CI_Controller
 		$this->load->view('menu', $data);
 		$this->load->view('lainview');
 	}
+	
+	function inputlain()
+	{
+		$session_data = $this->session->userdata('logged_in');
+		$data['username'] = $session_data['username'];
+		$data['status'] = $session_data['status'];
+		$this->load->view('menu', $data);
+		$this->load->view('inputlain');
+	}
+	
 	function tahun_dropdwon()
 	{
 		$drop_tahun = $this->usermodel->drop_tahun()->result();

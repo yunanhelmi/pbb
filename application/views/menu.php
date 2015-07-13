@@ -10,16 +10,16 @@
 		
 	</head>
 	<body>
-		<h2>Welcome <?php 
-			if (empty($username)) 
+	<?php
+		if (empty($username)) 
 			{
-				echo 'guest';
+				echo "<h2>Welcome Guest</h2>";
 			}
-			else
+		else
 			{
-				echo $username;
-			}?>
-		</h2>
+				echo "<h2>Active User : <span>$username </h2>";
+			}
+	?>
 		<div class="CSSTableGenerator" >
 			<table>
 				<tr>
@@ -30,9 +30,9 @@
 					<td><a href="<?php echo base_url()?>index.php">HOME</a></td>
 					<td><a href="<?php echo base_url()?>index.php/homecon/inputpbb">INPUT PBB</a></td>
 					<td><a href="<?php echo base_url()?>index.php/homecon/pbb">PBB</a></td>
-					<td><a href="http://36.74.100.179/mon/index.php/report/dataNonPbb">INPUT NON-PBB</a></td>
+					<td><a href="<?php echo base_url()?>index.php/homecon/inputnonpbb">INPUT NON-PBB</a></td>
 					<td><a href="<?php echo base_url()?>index.php/homecon/nonpbb">NON-PBB</a></td>
-					<td><a href="<?php echo base_url()?>index.php/homecon/lain">INPUT LAIN-LAIN</a></td>
+					<td><a href="<?php echo base_url()?>index.php/homecon/inputlain">INPUT LAIN-LAIN</a></td>
 					<td><a href="<?php echo base_url()?>index.php/homecon/lain">LAIN-LAIN</a></td>
 					<td><a href="<?php echo base_url()?>index.php/usercon/logout">LOGOUT</a></td>
 					<?php

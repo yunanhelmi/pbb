@@ -26,26 +26,10 @@
 		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styleinput.css" type="text/css">
 		
 		<div class="form-style-2">
-			<div class="form-style-2-heading">Form Input Data PBB Madiun</div>
+			<div class="form-style-2-heading">Form Input Data NON PBB Madiun</div>
 			<?php echo form_open('home/veriflogin'); ?>
-				<label for="field1"><span>Nama Kecamatan <span class="required">*</span></span>
-					<select name="kecamatan" class="select-field">
-						<option value="GEMARANG">GEMARANG</option>
-						<option value="BALEREJO">BALEREJO</option>
-						<option value="DAGANGAN">DAGANGAN</option>
-						<option value="DOLOPO">DOLOPO</option>
-						<option value="GEGER">GEGER</option>
-						<option value="JIWAN">JIWAN</option>
-						<option value="KAREE">KAREE</option>
-						<option value="KEBONSARI">KEBONSARI</option>
-						<option value="MADIUN">MADIUN</option>
-						<option value="MEJAYAN">MEJAYAN</option>
-						<option value="PILANGKENCENG">PILANGKENCENG</option>
-						<option value="SARADAN">SARADAN</option>
-						<option value="SAWAHAN">SAWAHAN</option>
-						<option value="WONOASRI">WONOASRI</option>
-						<option value="WUNGU">WUNGU</option>
-					</select>
+				<label for="field1"><span>Nama Pajak <span class="required">*</span></span>
+					<input type="text" id="tagerpbb1" value="" maxlength="3" />
 				</label>
 				<label for="field2">
 					<span>Target PBB <span class="required">*</span></span>
