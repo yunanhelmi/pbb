@@ -54,5 +54,9 @@ class HomeCon extends CI_Controller
 		$this->load->view('menu', $data);
 		$this->load->view('lainview');
 	}
+	function tahun_dropdwon()
+	{
+		
+	}
 }
 ?>

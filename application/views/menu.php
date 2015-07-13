@@ -10,6 +10,7 @@
 		
 	</head>
 	<body>
+		
 		<div class="CSSTableGenerator" >
 			<table>
 				<tr>
@@ -40,6 +41,16 @@
 					?>
 				</tr>
 			</table>
+		</div>
+		<div id="tahun">
+			<?php
+			echo "<select>";
+			$range = range(2010,2015);
+			foreach ($range as $cm) {
+			  echo "<option value='$cm'>$cm</option>";
+			}
+			echo "</select>";
+			?>
 		</div>
 		<br/>
 		<br/>

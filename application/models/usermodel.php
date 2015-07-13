@@ -39,5 +39,23 @@
 			$this->db->insert('user_login', $data);
 			return true;
 		}
+		
+		function drop_tahunpbb()
+		{
+			$q = $this->db->query("select tahun_pbb from datapbb");
+			return $q;
+		}
+		
+		function drop_tahunnon()
+		{
+			$q = $this->db->query("select tahun_non from datanonpbb");
+			return $q;
+		}
+		
+		function drop_tahunlain()
+		{
+			$q = $this->db->query("select tahun_lain from datalain");
+			return $q;
+		}
 	}
 ?>
