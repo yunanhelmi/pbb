@@ -39,5 +39,11 @@
 			$this->db->insert('user_login', $data);
 			return true;
 		}
+		
+		function drop_tahun()
+		{
+			$q = $this->db->query("select tahun_sum from datasum");
+			return $q;
+		}
 	}
 ?>

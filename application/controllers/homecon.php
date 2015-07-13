@@ -6,7 +6,7 @@ class HomeCon extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-		//$this->load->model('usermodel');
+		$this->load->model('usermodel');
 		$this->load->library('session');
 		$this->load->library('form_validation');
 	}
@@ -16,6 +16,7 @@ class HomeCon extends CI_Controller
 		$session_data = $this->session->userdata('logged_in');
 		$data['username'] = $session_data['username'];
 		$data['status'] = $session_data['status'];
+		$data['tahun'] = $this->usermodel->drop_tahun()->result();
 		$this->load->view('menu', $data);
 		$this->load->view('homeview');
 		//$this->load->view('homeview', $data);
@@ -56,6 +57,16 @@ class HomeCon extends CI_Controller
 		$data['status'] = $session_data['status'];
 		$this->load->view('menu', $data);
 		$this->load->view('lainview');
+	}
+	function tahun_dropdwon()
+	{
+		$drop_tahun = $this->usermodel->drop_tahun()->result();
+		$result = array();
+ 	
+		foreach ($drop_tahun as $key) {
+			$hasi[0] = $key->tahun_sum;
+			array_push($result, $hasi);
+		}
 	}
 }
 ?>
