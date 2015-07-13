@@ -47,7 +47,11 @@ class UserCon extends CI_Controller
 			}
 			else
 			{
+<<<<<<< HEAD
 				redirect('homecon', 'refresh');
+=======
+				redirect('homecon');
+>>>>>>> 9bf150629bff798d04192599d983c375ff7d8d4f
 			}
 		}
 	}
