@@ -6,7 +6,7 @@ class HomeCon extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-		//$this->load->model('usermodel');
+		$this->load->model('usermodel');
 		$this->load->library('session');
 		$this->load->library('form_validation');
 	}
