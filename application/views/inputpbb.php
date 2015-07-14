@@ -63,22 +63,6 @@
 					<input type="text" class="tel-number-field" id="pendapatanpbb4" value="" maxlength="3" onkeyup="moveOnMax(this,'pendapatanpbb5')" onkeypress="return isNumberKey(event)"/>
 					<input type="text" class="tel-number-field" id="pendapatanpbb5" value="" maxlength="3" onkeypress="return isNumberKey(event)"/>
 				</label>
-				<label for="field1"><span>Bulan <span class="required">*</span></span>
-					<select name="kecamatan" class="select-field">
-						<option value="JANUARI">JANUARI</option>
-						<option value="FEBRUARI">FEBRUARI</option>
-						<option value="MARET">MARET</option>
-						<option value="APRIL">APRIL</option>
-						<option value="MEI">MEI</option>
-						<option value="JUNI">JUNI</option>
-						<option value="JULI">JULI</option>
-						<option value="AGUSTUS">AGUSTUS</option>
-						<option value="SEPTEMBER">SEPTEMBER</option>
-						<option value="OKTOBER">OKTOBER</option>
-						<option value="NOVEMBER">NOVEMBER</option>
-						<option value="DESEMBER">DESEMBER</option>
-					</select>
-				</label>
 				<label for="field1"><span>Tahun <span class="required">*</span></span><input type="text" class="input-field" name="field1" size="6" maxlength="4" value="" onkeypress="return isNumberKey(event)"/></label>
 				<label><span>&nbsp;</span><input type="submit" value="Submit" /></label>
 			<?php echo form_close(); ?>

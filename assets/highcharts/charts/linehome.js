@@ -4,7 +4,7 @@ $(function () {
 		
 		var options = {
 	            chart: {
-	                renderTo: 'linehome',
+	                renderTo: 'container1',
 	                type: 'line',
 	                marginRight: 130,
 	                marginBottom: 25,   
@@ -57,7 +57,7 @@ $(function () {
 				
 		}
 		
-		$.getJSON('', function(json) {
+		$.getJSON('http://localhost/excel/index.php/data/viewColumn', function(json) {
                 options.xAxis.categories = json[0]['data'];
                 options.series[0] = json[1];
                 options.series[1] = json[2];
