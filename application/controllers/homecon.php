@@ -47,6 +47,20 @@ class HomeCon extends CI_Controller
 		}
 	}
 	
+	function doinputpbb()
+	{
+		if($this->input->post('inputpbb'))
+		{
+			echo 'Input Successfull';
+			redirect('hommecon/pbb', 'refresh');
+		}
+		else
+		{
+			echo 'Input Unsuccessfull';
+			redirect('hommecon/inputpbb', 'refresh');
+		}
+	}
+	
 	function nonpbb()
 	{
 		$session_data = $this->session->userdata('logged_in');
@@ -72,6 +86,20 @@ class HomeCon extends CI_Controller
 		}
 	}
 	
+	function doinputnonpbb()
+	{
+		if($this->input->post('inputnonpbb'))
+		{
+			echo 'Input Successfull';
+			redirect('hommecon/nonpbb', 'refresh');
+		}
+		else
+		{
+			echo 'Input Unsuccessfull';
+			redirect('hommecon/inputnonpbb', 'refresh');
+		}
+	}
+	
 	function lain()
 	{
 		$session_data = $this->session->userdata('logged_in');
@@ -94,6 +122,20 @@ class HomeCon extends CI_Controller
 		else
 		{
 			redirect('homecon', 'refresh');
+		}
+	}
+	
+	function doinputlain()
+	{
+		if($this->input->post('inputlain'))
+		{
+			echo 'Input Successfull';
+			redirect('hommecon/lain', 'refresh');
+		}
+		else
+		{
+			echo 'Input Unsuccessfull';
+			redirect('hommecon/inputlain', 'refresh');
 		}
 	}
 	

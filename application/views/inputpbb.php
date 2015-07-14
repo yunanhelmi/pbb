@@ -12,7 +12,7 @@
 				}
 			}
 		</script>
-		<SCRIPT language=Javascript>
+		<script language=Javascript>
 			  function isNumberKey(evt)
 			  {
 				 var charCode = (evt.which) ? evt.which : event.keyCode
@@ -21,15 +21,16 @@
 
 				 return true;
 			  }
-		</SCRIPT>
+		</script>
 		
 		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styleinput.css" type="text/css">
 		
 		<div class="form-style-2">
 			<div class="form-style-2-heading">Form Input Data PBB Madiun</div>
-			<?php echo form_open('home/veriflogin'); ?>
-				<label for="field1"><span>Nama Kecamatan <span class="required">*</span></span>
-					<select name="kecamatan" class="select-field">
+			<?php echo form_open('homecon/doinputpbb'); ?>
+				<label>
+					<span>Nama Kecamatan <span class="required">*</span></span>
+					<select name="kecamatan" class="select-field" required="required">
 						<option value="GEMARANG">GEMARANG</option>
 						<option value="BALEREJO">BALEREJO</option>
 						<option value="DAGANGAN">DAGANGAN</option>
@@ -49,22 +50,32 @@
 				</label>
 				<label for="field2">
 					<span>Target PBB <span class="required">*</span></span>
-					<input type="text" class="tel-number-field" id="tagerpbb1" value="" maxlength="3" onkeyup="moveOnMax(this,'tagerpbb2')" onkeypress="return isNumberKey(event)"/>
-					<input type="text" class="tel-number-field" id="tagerpbb2" value="" maxlength="3" onkeyup="moveOnMax(this,'tagerpbb3')" onkeypress="return isNumberKey(event)"/>
-					<input type="text" class="tel-number-field" id="tagerpbb3" value="" maxlength="3" onkeyup="moveOnMax(this,'tagerpbb4')" onkeypress="return isNumberKey(event)"/>
-					<input type="text" class="tel-number-field" id="tagerpbb4" value="" maxlength="3" onkeyup="moveOnMax(this,'tagerpbb5')" onkeypress="return isNumberKey(event)"/>
-					<input type="text" class="tel-number-field" id="tagerpbb5" value="" maxlength="3" onkeypress="return isNumberKey(event)"/>
+					<input type="text" class="tel-number-field" name="tagetpbb1" id="tagetpbb1" maxlength="3" onkeyup="moveOnMax(this,'tagetpbb2')" onkeypress="return isNumberKey(event)"/>
+					<input type="text" class="tel-number-field" name="tagetpbb2" id="tagetpbb2" maxlength="3" onkeyup="moveOnMax(this,'tagetpbb3')" onkeypress="return isNumberKey(event)"/>
+					<input type="text" class="tel-number-field" name="tagetpbb3" id="tagetpbb3" maxlength="3" onkeyup="moveOnMax(this,'tagetpbb4')" onkeypress="return isNumberKey(event)"/>
+					<input type="text" class="tel-number-field" name="tagetpbb4" id="tagetpbb4" maxlength="3" onkeyup="moveOnMax(this,'tagetpbb5')" onkeypress="return isNumberKey(event)"/>
+					<input type="text" class="tel-number-field" name="tagetpbb5" id="tagetpbb5" maxlength="3" onkeypress="return isNumberKey(event)" required="required"/>
 				</label>
 				<label>
 					<span>Pendapatan PBB <span class="required">*</span></span>
-					<input type="text" class="tel-number-field" id="pendapatanpbb1" value="" maxlength="3" onkeyup="moveOnMax(this,'pendapatanpbb2')" onkeypress="return isNumberKey(event)"/>
-					<input type="text" class="tel-number-field" id="pendapatanpbb2" value="" maxlength="3" onkeyup="moveOnMax(this,'pendapatanpbb3')" onkeypress="return isNumberKey(event)"/>
-					<input type="text" class="tel-number-field" id="pendapatanpbb3" value="" maxlength="3" onkeyup="moveOnMax(this,'pendapatanpbb4')" onkeypress="return isNumberKey(event)"/>
-					<input type="text" class="tel-number-field" id="pendapatanpbb4" value="" maxlength="3" onkeyup="moveOnMax(this,'pendapatanpbb5')" onkeypress="return isNumberKey(event)"/>
-					<input type="text" class="tel-number-field" id="pendapatanpbb5" value="" maxlength="3" onkeypress="return isNumberKey(event)"/>
+					<input type="text" class="tel-number-field" name="pendapatanpbb1" id="pendapatanpbb1" maxlength="3" onkeyup="moveOnMax(this,'pendapatanpbb2')" onkeypress="return isNumberKey(event)"/>
+					<input type="text" class="tel-number-field" name="pendapatanpbb2" id="pendapatanpbb2" maxlength="3" onkeyup="moveOnMax(this,'pendapatanpbb3')" onkeypress="return isNumberKey(event)"/>
+					<input type="text" class="tel-number-field" name="pendapatanpbb3" id="pendapatanpbb3" maxlength="3" onkeyup="moveOnMax(this,'pendapatanpbb4')" onkeypress="return isNumberKey(event)"/>
+					<input type="text" class="tel-number-field" name="pendapatanpbb4" id="pendapatanpbb4" maxlength="3" onkeyup="moveOnMax(this,'pendapatanpbb5')" onkeypress="return isNumberKey(event)"/>
+					<input type="text" class="tel-number-field" name="pendapatanpbb5" id="pendapatanpbb5" maxlength="3" onkeypress="return isNumberKey(event)" required="required"/>
 				</label>
-				<label for="field1"><span>Tahun <span class="required">*</span></span><input type="text" class="input-field" name="field1" size="6" maxlength="4" value="" onkeypress="return isNumberKey(event)"/></label>
-				<label><span>&nbsp;</span><input type="submit" value="Submit" /></label>
+				<label>
+					<span>Denda PBB <span class="required">*</span></span>
+					<input type="text" class="tel-number-field" name="dendapbb1" id="dendapbb1" maxlength="3" onkeyup="moveOnMax(this,'dendapbb2')" onkeypress="return isNumberKey(event)"/>
+					<input type="text" class="tel-number-field" name="dendapbb2" id="dendapbb2" maxlength="3" onkeyup="moveOnMax(this,'dendapbb3')" onkeypress="return isNumberKey(event)"/>
+					<input type="text" class="tel-number-field" name="dendapbb3" id="dendapbb3" maxlength="3" onkeyup="moveOnMax(this,'dendapbb4')" onkeypress="return isNumberKey(event)"/>
+					<input type="text" class="tel-number-field" name="dendapbb4" id="dendapbb4" maxlength="3" onkeyup="moveOnMax(this,'dendapbb5')" onkeypress="return isNumberKey(event)"/>
+					<input type="text" class="tel-number-field" name="dendapbb5" id="dendapbb5" maxlength="3" onkeypress="return isNumberKey(event)" required="required"/>
+				</label>
+				<label>
+					<span>Tahun <span class="required">*</span></span><input type="text" class="input-field" name="tahunpbb" size="6" maxlength="4" onkeypress="return isNumberKey(event)" required="required"/>
+				</label>
+				<label><span>&nbsp;</span><input type="submit" value="Submit" name="inputpbb"/></label>
 			<?php echo form_close(); ?>
 		</div>
 	</body>
