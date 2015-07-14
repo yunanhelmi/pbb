@@ -27,14 +27,14 @@
 					if($status == 1 && !empty($username))
 					{
 					?>
-					<td><a href="<?php echo base_url()?>index.php">HOME</a></td>
-					<td><a href="<?php echo base_url()?>index.php/homecon/inputpbb">INPUT PBB</a></td>
-					<td><a href="<?php echo base_url()?>index.php/homecon/pbb">PBB</a></td>
-					<td><a href="<?php echo base_url()?>index.php/homecon/inputnonpbb">INPUT NON-PBB</a></td>
-					<td><a href="<?php echo base_url()?>index.php/homecon/nonpbb">NON-PBB</a></td>
-					<td><a href="<?php echo base_url()?>index.php/homecon/inputlain">INPUT LAIN-LAIN</a></td>
-					<td><a href="<?php echo base_url()?>index.php/homecon/lain">LAIN-LAIN</a></td>
-					<td><a href="<?php echo base_url()?>index.php/usercon/logout">LOGOUT</a></td>
+					<td width="12.5%"><a href="<?php echo base_url()?>index.php">HOME</a></td>
+					<td width="12.5%"><a href="<?php echo base_url()?>index.php/homecon/inputpbb">INPUT PBB</a></td>
+					<td width="12.5%"><a href="<?php echo base_url()?>index.php/homecon/pbb">PBB</a></td>
+					<td width="12.5%"><a href="<?php echo base_url()?>index.php/homecon/inputnonpbb">INPUT NON-PBB</a></td>
+					<td width="12.5%"><a href="<?php echo base_url()?>index.php/homecon/nonpbb">NON-PBB</a></td>
+					<td width="12.5%"><a href="<?php echo base_url()?>index.php/homecon/inputlain">INPUT LAIN-LAIN</a></td>
+					<td width="12.5%"><a href="<?php echo base_url()?>index.php/homecon/lain">LAIN-LAIN</a></td>
+					<td width="12.5%"><a href="<?php echo base_url()?>index.php/usercon/logout">LOGOUT</a></td>
 					<?php
 					}
 					else
