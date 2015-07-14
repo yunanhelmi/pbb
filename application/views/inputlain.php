@@ -26,13 +26,21 @@
 		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styleinput.css" type="text/css">
 		
 		<div class="form-style-2">
-			<div class="form-style-2-heading">Form Input Data NON PBB Madiun</div>
+			<div class="form-style-2-heading">Form Input Data Lain-Lain Madiun</div>
 			<?php echo form_open('home/veriflogin'); ?>
 				<label for="field1"><span>Nama Pajak <span class="required">*</span></span>
-					<input type="text" id="tagerpbb1" value="" maxlength="3" />
+					<select name="namapajak" class="select-field">
+						<option value="BPHTB">BPHTB</option>
+						<option value="Parkir">Parkir</option>
+						<option value="Air Tanah">Air Tanah</option>
+						<option value="Hotel">Hotel</option>
+						<option value="Mineral">Mineral</option>
+						<option value="Restoran">Restoran</option>
+						<option value="Penerangan Jalan">Penerangan Jalan</option>
+					</select>
 				</label>
 				<label for="field2">
-					<span>Target PBB <span class="required">*</span></span>
+					<span>Target Pajak <span class="required">*</span></span>
 					<input type="text" class="tel-number-field" id="tagerpbb1" value="" maxlength="3" onkeyup="moveOnMax(this,'tagerpbb2')" onkeypress="return isNumberKey(event)"/>
 					<input type="text" class="tel-number-field" id="tagerpbb2" value="" maxlength="3" onkeyup="moveOnMax(this,'tagerpbb3')" onkeypress="return isNumberKey(event)"/>
 					<input type="text" class="tel-number-field" id="tagerpbb3" value="" maxlength="3" onkeyup="moveOnMax(this,'tagerpbb4')" onkeypress="return isNumberKey(event)"/>
@@ -40,7 +48,7 @@
 					<input type="text" class="tel-number-field" id="tagerpbb5" value="" maxlength="3" onkeypress="return isNumberKey(event)"/>
 				</label>
 				<label>
-					<span>Pendapatan PBB <span class="required">*</span></span>
+					<span>Realisasi Pajak <span class="required">*</span></span>
 					<input type="text" class="tel-number-field" id="pendapatanpbb1" value="" maxlength="3" onkeyup="moveOnMax(this,'pendapatanpbb2')" onkeypress="return isNumberKey(event)"/>
 					<input type="text" class="tel-number-field" id="pendapatanpbb2" value="" maxlength="3" onkeyup="moveOnMax(this,'pendapatanpbb3')" onkeypress="return isNumberKey(event)"/>
 					<input type="text" class="tel-number-field" id="pendapatanpbb3" value="" maxlength="3" onkeyup="moveOnMax(this,'pendapatanpbb4')" onkeypress="return isNumberKey(event)"/>

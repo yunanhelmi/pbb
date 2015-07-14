@@ -33,12 +33,18 @@ class HomeCon extends CI_Controller
 	
 	function inputpbb()
 	{
-		$session_data = $this->session->userdata('logged_in');
-		$data['username'] = $session_data['username'];
-		$data['status'] = $session_data['status'];
-		$this->load->view('menu', $data);
-		$this->load->view('inputpbb');
-		//print_r($session_data);
+		if($this->session->userdata('logged_in'))
+		{
+			$session_data = $this->session->userdata('logged_in');
+			$data['username'] = $session_data['username'];
+			$data['status'] = $session_data['status'];
+			$this->load->view('menu', $data);
+			$this->load->view('inputpbb');
+		}
+		else
+		{
+			redirect('homecon', 'refresh');
+		}
 	}
 	
 	function nonpbb()
@@ -52,11 +58,18 @@ class HomeCon extends CI_Controller
 	
 	function inputnonpbb()
 	{
-		$session_data = $this->session->userdata('logged_in');
-		$data['username'] = $session_data['username'];
-		$data['status'] = $session_data['status'];
-		$this->load->view('menu', $data);
-		$this->load->view('inputnonpbb');
+		if($this->session->userdata('logged_in'))
+		{
+			$session_data = $this->session->userdata('logged_in');
+			$data['username'] = $session_data['username'];
+			$data['status'] = $session_data['status'];
+			$this->load->view('menu', $data);
+			$this->load->view('inputnonpbb');
+		}
+		else
+		{
+			redirect('homecon', 'refresh');
+		}
 	}
 	
 	function lain()
@@ -70,11 +83,18 @@ class HomeCon extends CI_Controller
 	
 	function inputlain()
 	{
-		$session_data = $this->session->userdata('logged_in');
-		$data['username'] = $session_data['username'];
-		$data['status'] = $session_data['status'];
-		$this->load->view('menu', $data);
-		$this->load->view('inputlain');
+		if($this->session->userdata('logged_in'))
+		{
+			$session_data = $this->session->userdata('logged_in');
+			$data['username'] = $session_data['username'];
+			$data['status'] = $session_data['status'];
+			$this->load->view('menu', $data);
+			$this->load->view('inputlain');
+		}
+		else
+		{
+			redirect('homecon', 'refresh');
+		}
 	}
 	
 	function tahun_dropdwon()
