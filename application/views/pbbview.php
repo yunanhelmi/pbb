@@ -6,7 +6,7 @@
 		<table width="100%">
 			<tr>
 				<td width="50%"><div id="container1" style="height: 300px"></div></td>
-				<td><p style="font-family:arial;text-align:center;">Pendapatan PBB Berdasarkan Kecamatan Tahun 2015</p><div id="container2" style="height: 300px"></div></td>
+				<td><p style="font-family:arial;text-align:center;">Pendapatan PBB Berdasarkan Kecamatan Tahun 2015</p><div id="pbbviewchart" style="height: 300px"></div></td>
 			</tr>
 		</table>
 		<br/>

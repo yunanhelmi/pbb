@@ -2,7 +2,7 @@ $(document).ready(function() {
             var options = {
                 chart: {
 					type: 'pie',
-                    renderTo: 'container2',
+                    renderTo: 'pbbviewchart',
                     plotBackgroundColor: null,
                     plotBorderWidth: null,
                     plotShadow: false,
@@ -35,34 +35,14 @@ $(document).ready(function() {
 				},
                 series: [{
                     type: 'pie',
-                    name: 'Pendapatan',
+					name: []
                     data: []
                 }]
             }
             
-            $.getJSON("", function(json) {
+            $.getJSON("http://localhost/index.php/homecon/keluarpiepbb", function(json) {
                 options.series[0].data = json;
                 chart = new Highcharts.Chart(options);
             });
             
 });   
-
-		// Programmatically-defined buttons
-$(".chart-export").each(function() {
-  var jThis = $(this),
-      chartSelector = jThis.data("chartSelector"),
-      chart = $(chartSelector).highcharts();
-
-  $("*[data-type]", this).each(function() {
-    var jThis = $(this),
-        type = jThis.data("type");
-    if(Highcharts.exporting.supports(type)) {
-      jThis.click(function() {
-        chart.exportChartLocal({ type: type });
-      });
-    }
-    else {
-      jThis.attr("disabled", "disabled");
-    }
-  });
-});

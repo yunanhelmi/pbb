@@ -40,10 +40,12 @@
 			return true;
 		}
 		
-		function drop_tahun()
-		{
-			$q = $this->db->query("select tahun_sum from datasum");
-			return $q;
-		}
+		//function drop_tahun()
+		//{
+		//	$q = $this->db->query("select tahun_sum from datasum");
+		//	return $q;
+		//}
+		
+		
 	}
 ?>

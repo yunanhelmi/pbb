@@ -51,15 +51,6 @@
 				</tr>
 			</table>
 		</div>
-		<div id="tahun">
-			<select>
-				<?php 
-					foreach($tahun as $row)
-					{ 
-					  echo '<option value="'.$row->description.'">'.$row->description.'</option>';
-					}
-				?>
-			</select>
-		</div>
+		
 		<br/>
 		<br/>

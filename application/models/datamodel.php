@@ -5,6 +5,7 @@
 		{
 			parent::__construct();
 			$this->load->database();
+			$this->load->model('showmodel');
 		}
 		
 		function insertpbb()
@@ -91,7 +92,7 @@
 			return true;
 		}
 		
-		function insertnonpbb()
+		function insertlain()
 		{
 			$namapajaklain = $this->input->post('namapajaklain');
 			
@@ -132,5 +133,7 @@
 			$this->db->insert('datalainlain', $data);
 			return true;
 		}
+		
+		
 	}
 ?>
